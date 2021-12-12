@@ -20,30 +20,13 @@ Plant
 
 ## Route Table
 
-List your routes in a table
-
 | Route Name | URL | HTTP | Description |
 |-----------|------|-------|-------------|
-| INDEX | / | GET | Display all Plant entries
-| SHOW | /@id | GET | show
-| CREATE | / | POST | Add new , then redirect (index)
-| UPDATE | /@id | PUT | Update , then redirect (index)
-| DELETE | /@id | DELETE | Delete , then redirect (index)
-
-
-## User Stories
- - User is able to add images and create a plant scrapbook
- - User can create new plant entries and edit their description
- - User is be able to update or delete any plants they make
-
-## Challenges
-
--CHALLENGES
-
-
-## List of Technologies
-
--
-
-## Resources 
--
+| INDEX | / | GET | Render all of our plants 
+| SHOW | /post/:id | GET | Render an individual plant page
+| NEW | /new | GET | render our Form component for creating a new plant
+| EDIT | /edit | GET | Renders our Form to edit our plant
+| UPDATE | /post/:id | PUT | Renders our Form to update our plant
+| DELETE | /post/:id | DELETE | Deletes a plant
+| Zodiac | /zodiac | GET | Renders plants with a button to click and read horoscope 
+| Guide | /guide | GET | Renders a carousel and tips on how to take care for your plants
